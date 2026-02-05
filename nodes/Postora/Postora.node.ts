@@ -430,7 +430,7 @@ export class Postora implements INodeType {
 
                         const body: IDataObject = {
                             platforms: [platform],
-                            account_id: accountId,
+                            account_ids: [accountId],
                             caption,
                             ...additionalOptions,
                         };

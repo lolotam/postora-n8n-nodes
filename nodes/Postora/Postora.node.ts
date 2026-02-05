@@ -463,6 +463,7 @@ export class Postora implements INodeType {
                             url: `${baseUrl}/functions/v1/n8n-api/api/v1/post`,
                             headers: {
                                 'x-api-key': apiKey,
+                                'Authorization': `Bearer ${apiKey}`,
                                 'Content-Type': 'application/json',
                             },
                             body,
@@ -476,6 +477,7 @@ export class Postora implements INodeType {
                             url: `${baseUrl}/functions/v1/n8n-api/api/v1/posts`,
                             headers: {
                                 'x-api-key': apiKey,
+                                'Authorization': `Bearer ${apiKey}`,
                             },
                             json: true,
                         });
@@ -491,6 +493,7 @@ export class Postora implements INodeType {
                             url: `${baseUrl}/functions/v1/n8n-api/api/v1/upload-media`,
                             headers: {
                                 'x-api-key': apiKey,
+                                'Authorization': `Bearer ${apiKey}`,
                                 'Content-Type': 'application/json',
                             },
                             body: {
@@ -508,6 +511,7 @@ export class Postora implements INodeType {
                             url: `${baseUrl}/functions/v1/n8n-api/api/v1/accounts`,
                             headers: {
                                 'x-api-key': apiKey,
+                                'Authorization': `Bearer ${apiKey}`,
                             },
                             json: true,
                         });
